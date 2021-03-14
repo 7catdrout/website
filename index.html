@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Catdrout Productions</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+<!-- Menu -->
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">. . .</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="windowssoftware.html">Windows Software</a>
+    <a href="linuxsoftware.html">Linux Software</a>
+    <a href="https://discord.com/invite/Sw4TseUJwd">Discord Server</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+    <!-- Main Page -->
+    <center>
+<p><img src="https://i.postimg.cc/d0wNxBDS/Catdrout.png" width="311" height="232" alt="" /></p>
+<p><span style="font-size: 24pt;">Wellcome to Catdrout Productions</span></p>
+<p>Pure website with no shit</p>
+</center>
+
+    <!-- Google Fonts -->
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+  </style>
+  </body>
+</html>
